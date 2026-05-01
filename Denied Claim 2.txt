@@ -1,0 +1,43 @@
+Claim ID: 152304-2025-03-15
+Patient Name: Maria Lopez
+Patient Age/Gender: 42-year-old Female
+Provider Name / Specialty: Dr. Kevin Patel, Cardiology
+Date of Service: March 15, 2025
+CPT Code: 93000
+ICD Code: I25.10 (Atherosclerotic heart disease of native coronary artery without angina)
+Billed Amount: $120.00
+Allowed Amount: $80.00
+Partial Payment: $0.00
+Denial Reason: Incomplete documentation for interpretation of EKG tracing (CO50).
+
+Procedure Notes / Clinical Documentation:
+
+Routine cardiac follow-up visit; patient asymptomatic.
+
+EKG performed as part of standard monitoring.
+
+Physician note states “EKG performed; results normal,” without detailed rhythm analysis or comparison to prior studies.
+
+No interpretation of conduction abnormalities, ST-segment changes, or arrhythmias documented.
+
+Patient history: stable angina controlled with medication; no chest pain or dyspnea.
+
+Vital signs: BP 122/78 mmHg, HR 70 bpm, O2 sat 98% RA.
+
+Payer’s Explanation:
+
+CPT 93000 requires performance and interpretation of complete EKG tracing.
+
+Documentation must include interpretation of rhythm, conduction, and comparison to prior EKGs if available.
+
+Partial documentation supports performance of EKG but does not meet full criteria for reimbursement.
+
+As a result, claim denied; allowed amount reflects partial coverage for the technical component of service.
+
+Next Steps / Appeals:
+
+Providers may submit additional documentation showing complete EKG interpretation notes.
+
+Appeals must include: original claim, full EKG report, and supporting physician notes within 180 days.
+
+Review team will re-evaluate based on supplemental documentation.

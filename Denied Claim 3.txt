@@ -1,0 +1,49 @@
+Claim ID: 158927-2025-03-18
+Patient Name: Robert Nguyen
+Patient Age/Gender: 65-year-old Male
+Provider Name / Specialty: Dr. Sarah Kim, Orthopedic Surgery
+Date of Service: March 18, 2025
+CPT Code: 99215
+ICD Code: M17.11 (Unilateral primary osteoarthritis, right knee)
+Billed Amount: $250.00
+Allowed Amount: $175.00
+Partial Payment: $0.00
+Denial Reason: Insufficient documentation to support high-level complexity E/M service (CO50).
+
+Procedure Notes / Clinical Documentation:
+
+Follow-up for right knee osteoarthritis.
+
+Patient reports mild pain, no recent injury or flare-ups.
+
+Physical exam: stable range of motion, mild tenderness, no swelling, gait normal.
+
+Review of imaging: X-rays unchanged from previous study; no new findings.
+
+Vital signs: BP 130/82 mmHg, HR 75 bpm, weight 190 lbs.
+
+Physician notes: continue current therapy, recommend low-impact exercises, monitor symptoms.
+
+No new medications, injections, or advanced procedures performed.
+
+Documentation does not indicate multiple uncontrolled problems, new diagnostic interpretation, or high complexity decision-making.
+
+Payer’s Explanation:
+
+CPT 99215 requires:
+
+High complexity medical decision-making
+
+Comprehensive exam and management of multiple problems
+
+Submitted records indicate routine follow-up, limited problem management, and standard care for a stable condition.
+
+Documentation aligns more closely with CPT 99214 (moderate complexity visit).
+
+Next Steps / Appeals:
+
+Providers should submit additional documentation demonstrating high complexity care or management of multiple conditions.
+
+Appeals must include original claim, full clinical notes, and any supplemental documentation within 180 days.
+
+Clinical review team will re-evaluate for possible payment adjustment.

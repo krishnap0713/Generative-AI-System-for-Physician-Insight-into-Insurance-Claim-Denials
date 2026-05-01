@@ -1,0 +1,59 @@
+Claim ID: 145872-2025-03-12
+Patient Name: John Doe
+Patient Age/Gender: 58-year-old Male
+Provider Name / Specialty: Dr. Jane Smith, Internal Medicine
+Date of Service: March 12, 2025
+CPT Code: 99214
+ICD Code: E11.9 (Type 2 Diabetes Mellitus without complications)
+Billed Amount: $210.00
+Allowed Amount: $150.00
+Partial Payment: $0.00
+Denial Reason: Insufficient documentation to support billed level of service; service considered not medically necessary per payer guidelines (CO50).
+
+Procedure Notes / Clinical Documentation:
+
+Routine follow-up visit for stable Type 2 Diabetes.
+
+Patient reports no new symptoms; blood sugar levels stable.
+
+Vital signs: BP 128/78 mmHg, HR 72 bpm, weight 185 lbs, BMI 28.4.
+
+Physical exam: normal cardiac and pulmonary findings, no edema, extremities normal.
+
+Laboratory review: A1C 6.8%, fasting glucose 110 mg/dL.
+
+Current medication regimen: Metformin 1000 mg BID, lifestyle counseling continued.
+
+No new medications prescribed, no significant changes to treatment plan.
+
+Documentation indicates standard monitoring of stable chronic condition; no evidence of moderate complexity decision-making required for CPT 99214.
+
+Payer’s Explanation:
+
+CPT 99214 requires:
+
+Moderate complexity medical decision-making
+
+Detailed history (review of multiple systems and problems)
+
+Expanded problem-focused examination
+
+Submitted documentation reflects routine follow-up care without high-level decision-making or multiple problem management.
+
+Review of the records did not show consideration of multiple management options, extensive review of external medical records, or interpretation of new diagnostic findings.
+
+Based on policy, the visit more appropriately aligns with CPT 99213.
+
+Next Steps / Appeals:
+
+Providers should ensure that documentation reflects the complexity of medical decision-making, extent of history obtained, examination details, and clinical reasoning.
+
+If the provider believes CPT 99214 is justified, an appeal may be submitted within 180 days, including:
+
+Original claim
+
+Complete medical record
+
+Supplemental documentation supporting medical necessity
+
+Appeals will be re-evaluated by the clinical review team for possible reconsideration.
