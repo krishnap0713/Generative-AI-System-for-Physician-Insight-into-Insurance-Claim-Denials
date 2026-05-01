@@ -6,121 +6,140 @@ Large Language Models (LLMs)
 Retrieval-Augmented Generation (RAG)
 Agentic AI with tool integration
 
-to bridge the gap between complex healthcare claim data and clinical decision-making.
+# 🧠 Generative AI System for Insurance Claim Denial Analysis  
 
-🚀 Key Features
+## 📌 Overview  
+This project is a **Generative AI + RAG + Agent-based system** designed to analyze healthcare insurance claim denials using both:  
 
-🔍 Retrieve claim-specific information using Claim ID
+- Unstructured claim documents (text files)  
+- Structured claims dataset (Excel)  
 
-🧾 Generate:
-Denial reason (plain language)
-Claim summary
+The system enables **natural language querying** to retrieve denial explanations, summarize claims, and compute financial insights.
 
-Recommended next steps
+---
 
-📊 Perform accurate numerical analysis using custom tools
+## 🔍 Unstructured Claims (Text Files) – RAG Pipeline  
 
-🤖 Agent automatically selects tools based on query intent
+- Loaded multiple `.txt` denied claim documents  
+- Applied **RecursiveCharacterTextSplitter** for chunking large text  
+- Generated embeddings using **HuggingFaceEmbeddings** (`sentence-transformers/all-mpnet-base-v2`)  
+- Stored embeddings as vectors in **FAISS vector database**  
+- Created a retriever using:  
+  `vectorstore.as_retriever()` for similarity-based search  
 
-⚡ Eliminates LLM hallucination in calculations using Python functions
+### Prompt Engineering  
+- Designed **PromptTemplate** to:  
+  - Extract claim by Claim ID  
+  - Generate denial reason  
+  - Summarize claim details  
+  - Suggest next steps  
 
-🏗️ System Architecture
-1. Retrieval-Augmented Generation (RAG)
-Uses FAISS vector database for efficient similarity search
-Embeds text chunks using HuggingFace embeddings
-Retrieves relevant claim documents before LLM response generation
-2. Agentic AI (LangGraph / LangChain)
-Reactive agent decides:
-When to use LLM
-When to call tools
-Enables hybrid reasoning (LLM + deterministic computation)
-3. Tool Integration
+### LLM Integration  
+- Used **ChatOpenAI (GPT-3.5 Turbo via OpenAI API)**  
+- Controlled outputs using:  
+  - Low temperature (`0.1`)  
+  - Structured prompting  
 
-Custom tools handle structured queries like:
+---
 
-Min / Max Payment Amount
-Highest / Lowest payer
-Data validation checks
+## 📊 Structured Claims Dataset (Excel) – Tool-Based Querying  
 
-📂 Datasets
+- Loaded `.xlsx` dataset using **pandas**  
 
-🔹 Unstructured Data
-Denied claim .txt files
-Includes:
-Claim ID
-CPT / ICD codes
-Denial reason
-Payment details
+### Data Processing  
+- Cleaned and processed data using:  
+  - `to_numeric()`  
+  - `dropna()`  
 
-🔹 Structured Data
-Excel dataset (.xlsx)
-Columns include:
-Payment_Amount
-Payer
-Claim ID
-Appeal status
-Documentation notes
+### Custom Computation Functions  
+- Created functions for:  
+  - Min / Max `Payment_Amount`  
+  - Payer with highest / lowest payment (`idxmax()`, `idxmin()`)  
+  - Retrieval of claim-level attributes:  
+    - Payer  
+    - CPT codes  
+    - ICD codes  
+    - Denial reason  
+    - Documentation notes  
 
-🛠️ Tech Stack & Python Skills
+### Tool Integration  
+- Converted functions into tools using **LangChain `@tool` decorator**  
+- Ensured accurate numerical computation outside the LLM  
 
-🔹 Core Libraries
-LangChain
-Prompt engineering (PromptTemplate)
-Chains and pipelines
-LangGraph
-Reactive agent (create_react_agent)
-OpenAI
-ChatOpenAI (GPT-3.5 Turbo)
+---
 
-🔹 Vector Database
-FAISS
-FAISS.from_documents()
-Vector similarity search
+## 🤖 Agentic Workflow (LangChain + LangGraph)  
 
-🔹 Embeddings
-HuggingFaceEmbeddings
-sentence-transformers/all-mpnet-base-v2
+- Built agent using `create_react_agent` (LangGraph)  
 
-🔹 Text Processing
-RecursiveCharacterTextSplitter
-Chunking large documents
-Overlap handling for context preservation
+### Integrated Components  
+- Retriever (for unstructured text)  
+- Tools (for structured data)  
 
-🔹 Data Handling
-pandas
-Data cleaning (to_numeric, dropna)
-Aggregations (min(), max())
-Index-based queries (idxmax(), idxmin())
+### Agent Capabilities  
+- Dynamically decides:  
+  - When to call retriever  
+  - When to invoke tool  
+- Supports natural language queries like:  
+  - “Why was this claim denied?”  
+  - “Which payer paid the most?”  
+  - “What is the max payment amount?”  
 
-🔹 OS & File Handling
-os module for file management
+---
 
-🔄 Workflow
-User inputs query (e.g., Claim ID or question)
-System:
-Retrieves relevant documents (RAG)
-Injects into prompt template
-LLM generates:
-Denial explanation
-Summary
-Next steps
-If query is numerical:
-Agent calls appropriate Python tool
-Final response returned in natural language
+## ⚙️ Core Tech Stack  
 
-📈 Results & Impact
-✅ Accurate claim retrieval and summarization
-✅ Reliable tool-based numerical outputs
-✅ Reduced hallucination in calculations
-✅ Improved interpretability for physicians
-✅ Faster decision-making
+- **OpenAI API** → ChatOpenAI (GPT-3.5 Turbo)  
+- **LangChain** → PromptTemplate, tool decorator, chains  
+- **LangGraph** → Agent creation and reasoning workflow  
+- **FAISS** → Vector storage and similarity-based retrieval  
+- **Hugging Face** → Embeddings model  
+- **Python (pandas)** → Data processing and tool functions  
 
-📌 AI systems like this can reduce denial rates by 15–40% and improve workflow efficiency
+---
 
-👩‍💻 Author
+## 🧠 Key System Design  
 
-Krishna Parekh
+- Combined:  
+  - Embeddings + vectors + retriever (RAG)  
+  - PromptTemplate-driven LLM responses  
+  - Tool-based deterministic computation  
 
-Master’s in Health Informatics
+- Reduced reliance on raw LLM reasoning for structured queries  
+- Built hybrid pipeline:  
+  **LLM + Retrieval + Programmatic Tools**
 
-Rutgers School of Health Professions
+---
+
+## 📌 Features  
+
+- Claim-level retrieval using Claim ID  
+- Denial explanation in plain language  
+- Structured dataset querying  
+- Accurate computation using Python tools  
+- Agent-based dynamic reasoning  
+
+---
+
+## ⚠️ Limitations  
+
+- Uses synthetic datasets  
+- Not production-scaled  
+- Local execution (API key-based)  
+
+---
+
+## 🚀 Future Improvements  
+
+- Integration with real-world claims datasets  
+- Scalable RAG pipeline (metadata filtering)  
+- Expanded analytics (denial trends, payer insights)  
+- Cloud deployment (AWS / Databricks)  
+
+---
+
+## 👩‍💻 Author  
+
+**Krishna Parekh**  
+Master’s in Health Informatics  
+Rutgers School of Health Professions  
