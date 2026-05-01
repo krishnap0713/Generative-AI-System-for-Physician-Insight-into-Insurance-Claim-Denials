@@ -9,11 +9,15 @@ Agentic AI with tool integration
 to bridge the gap between complex healthcare claim data and clinical decision-making.
 
 🚀 Key Features
+
 🔍 Retrieve claim-specific information using Claim ID
+
 🧾 Generate:
 Denial reason (plain language)
 Claim summary
+
 Recommended next steps
+
 📊 Perform accurate numerical analysis using custom tools
 🤖 Agent automatically selects tools based on query intent
 ⚡ Eliminates LLM hallucination in calculations using Python functions
@@ -37,6 +41,7 @@ Highest / Lowest payer
 Data validation checks
 
 📂 Datasets
+
 🔹 Unstructured Data
 Denied claim .txt files
 Includes:
@@ -44,6 +49,7 @@ Claim ID
 CPT / ICD codes
 Denial reason
 Payment details
+
 🔹 Structured Data
 Excel dataset (.xlsx)
 Columns include:
@@ -54,6 +60,7 @@ Appeal status
 Documentation notes
 
 🛠️ Tech Stack & Python Skills
+
 🔹 Core Libraries
 LangChain
 Prompt engineering (PromptTemplate)
