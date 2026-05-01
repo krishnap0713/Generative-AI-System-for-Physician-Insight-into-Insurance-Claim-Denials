@@ -1,11 +1,3 @@
-This project presents a Generative AI-powered system designed to help physicians understand insurance claim denials through plain-language explanations, structured summaries, and actionable next steps.
-
-The system combines:
-
-Large Language Models (LLMs)
-Retrieval-Augmented Generation (RAG)
-Agentic AI with tool integration
-
 # 🧠 Generative AI System for Insurance Claim Denial Analysis  
 
 ## 📌 Overview  
