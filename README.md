@@ -116,3 +116,9 @@ Final response returned in natural language
 ✅ Faster decision-making
 
 📌 AI systems like this can reduce denial rates by 15–40% and improve workflow efficiency
+
+👩‍💻 Author
+
+Krishna Parekh
+Master’s in Health Informatics
+Rutgers School of Health Professions
