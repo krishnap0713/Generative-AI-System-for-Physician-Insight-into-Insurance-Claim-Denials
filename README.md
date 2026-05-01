@@ -19,7 +19,9 @@ Claim summary
 Recommended next steps
 
 📊 Perform accurate numerical analysis using custom tools
+
 🤖 Agent automatically selects tools based on query intent
+
 ⚡ Eliminates LLM hallucination in calculations using Python functions
 
 🏗️ System Architecture
